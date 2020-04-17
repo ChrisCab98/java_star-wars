@@ -12,6 +12,7 @@ public class TestBelligerant {
         EmpireGalactique empire = new EmpireGalactique();
         AllianceRebelle alliance = new AllianceRebelle();
         tester(empire);
+        System.out.println("");
         tester(alliance);
     }
 }

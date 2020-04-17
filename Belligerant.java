@@ -26,6 +26,27 @@ public abstract class Belligerant {
     }
 
     public String toString() {
-        return ("Camp : " + campDeRalliement + "\nflotte " + flotte.length + "\nVesseau Op : " + flotte);
+
+        String str = "";
+        str += "Détail du belligéran : ";
+        str += campDeRalliement;
+        str += " ";
+        str += etatFlotte();
+        str += "Vaisseau opérationnels\n";
+
+        for (int i = 0; i < flotte.length; i++) {
+            str += "\tVaisseau {modele : ";
+            str += flotte[i].modele;
+            str += " Force : ";
+            str += flotte[i].attaque;
+            str += " defense : ";
+            str += flotte[i].defense;
+            str += " positon : ";
+            str += flotte[i].positionDeStationnement;
+            str += "}\n";
+
+        }
+
+        return (str);
     }
 }

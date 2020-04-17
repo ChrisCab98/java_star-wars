@@ -33,8 +33,8 @@ public abstract class Vaisseau {
     }
 
     public String toString() {
-        return ("Modele : " + modele + "\nPosition : " + positionDeStationnement.x + "," + positionDeStationnement.y
-                + "\nAtaque : " + attaque + "\nDefense : " + defense + "\nStatus" + status);
+        return ("Modele : " + modele + " / Position : " + positionDeStationnement.x + "," + positionDeStationnement.y
+                + " / Ataque : " + attaque + " / Defense : " + defense + " / Status " + status);
     }
 
 }

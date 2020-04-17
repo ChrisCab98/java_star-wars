@@ -10,20 +10,6 @@ public class EmpireGalactique extends Belligerant {
         }
     }
 
-    public String toString() {
-
-        String str = "";
-        str += "Empire Galacic\n";
-        str += "Description de la flotte\n";
-        for (int i = 0; i < flotte.length; i++) {
-            str += "\n\nVaisseau n°" + i;
-            str += "\n";
-            str += flotte[i];
-        }
-
-        return (str);
-    }
-
     public static void main(String argument[]) {
         EmpireGalactique test = new EmpireGalactique();
         System.out.println(test);
